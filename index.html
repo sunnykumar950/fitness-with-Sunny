@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Guide With Sunny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">Fitness Guide With Sunny</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Diet</a></li>
+                <li><a href="#">Workout</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Transform Your Body</h1>
+        <p>Train Hard. Stay Fit. Live Healthy.</p>
+    </section>
+    <section class="workout">
+    <h2>Workout Programs</h2>
+
+    <div class="workout-container">
+
+        <div class="card">
+            <img src="Beg.jpeg" alt="Beginner Workout">
+            <h3>Beginner</h3>
+            <p>Perfect workouts for people starting their fitness journey.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="med.jpg" alt="Intermediate Workout">
+            <h3>Intermediate</h3>
+            <p>Build strength and endurance with structured routines.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="advn.jpg" alt="Advanced Workout">
+            <h3>Advanced</h3>
+            <p>High-intensity workouts for experienced athletes.</p>
+            <button>Explore</button>
+        </div>
+
+    </div>
+    <section class="bmi-section">
+    <div class="bmi-container">
+        <h2>BMI Calculator</h2>
+        <p>Check your Body Mass Index and understand your weight category.</p>
+
+        <div class="bmi-form">
+            <input type="number" id="height" placeholder="Height (cm)">
+            <input type="number" id="weight" placeholder="Weight (kg)">
+
+            <button onclick="calculateBMI()">Calculate BMI</button>
+        </div>
+
+        <div id="bmi-result"></div>
+    </div>
+</section>
+</section>
+<section class="workout-section">
+    <h2>Workout Plans</h2>
+    <p class="section-subtitle">Choose a workout plan according to your fitness level.</p>
+
+    <div class="workout-container">
+
+        <!-- Beginner -->
+        <div class="workout-card">
+            <h3>Beginner</h3>
+            <p>Perfect for people who are new to fitness.</p>
+
+            <h4>Day 1 - Full Body</h4>
+            <ul>
+                <li>Squats - 3 × 10</li>
+                <li>Push-ups - 3 × 8</li>
+                <li>Bodyweight Lunges - 3 × 10</li>
+                <li>Plank - 3 × 20 sec</li>
+                <li>Jumping Jacks - 3 × 20</li>
+            </ul>
+
+            <h4>Day 2 - Rest</h4>
+            <p>Take proper rest and recover.</p>
+
+            <h4>Day 3 - Full Body</h4>
+            <ul>
+                <li>Squats - 3 × 12</li>
+                <li>Incline Push-ups - 3 × 10</li>
+                <li>Glute Bridges - 3 × 12</li>
+                <li>Plank - 3 × 25 sec</li>
+            </ul>
+        </div>
+
+
+        <!-- Intermediate -->
+        <div class="workout-card">
+            <h3>Intermediate</h3>
+            <p>For people with some training experience.</p>
+
+            <h4>Day 1 - Chest & Triceps</h4>
+            <ul>
+                <li>Bench Press - 4 × 10</li>
+                <li>Incline Dumbbell Press - 3 × 10</li>
+                <li>Chest Fly - 3 × 12</li>
+                <li>Tricep Pushdown - 3 × 12</li>
+            </ul>
+
+            <h4>Day 2 - Back & Biceps</h4>
+            <ul>
+                <li>Lat Pulldown - 4 × 10</li>
+                <li>Seated Row - 3 × 10</li>
+                <li>Dumbbell Curl - 3 × 12</li>
+                <li>Hammer Curl - 3 × 12</li>
+            </ul>
+
+            <h4>Day 3 - Legs</h4>
+            <ul>
+                <li>Squats - 4 × 10</li>
+                <li>Leg Press - 3 × 12</li>
+                <li>Leg Curl - 3 × 12</li>
+                <li>Calf Raises - 4 × 15</li>
+            </ul>
+        </div>
+
+
+        <!-- Advanced -->
+        <div class="workout-card">
+            <h3>Advanced</h3>
+            <p>For experienced lifters with good technique.</p>
+
+            <h4>Day 1 - Chest</h4>
+            <ul>
+                <li>Bench Press - 4 × 8</li>
+                <li>Incline Bench Press - 4 × 8</li>
+                <li>Dumbbell Fly - 3 × 12</li>
+                <li>Dips - 3 × 10</li>
+            </ul>
+
+            <h4>Day 2 - Back</h4>
+            <ul>
+                <li>Deadlift - 4 × 6</li>
+                <li>Pull-ups - 4 × 8</li>
+                <li>Barbell Row - 4 × 8</li>
+                <li>Lat Pulldown - 3 × 10</li>
+            </ul>
+
+            <h4>Day 3 - Legs</h4>
+            <ul>
+                <li>Barbell Squats - 4 × 8</li>
+                <li>Romanian Deadlift - 3 × 10</li>
+                <li>Leg Press - 4 × 10</li>
+                <li>Calf Raises - 4 × 15</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+    
+
+    <section class="about">
+        <h2> About Us </h2>
+        <p>
+            Welcome to Fitness Guide with Sunny,
+            Your trusted destination for fitness, Health, and a better lifestyle. 
+            Whether you're just beginning your fitness journey or looking to take your training 
+            to next level, you'll find simple workout routines, practical Nutrition tips , and expert guidance to help you achieve your goals. 
+            Our mission is to make fitness easy, enjoyable, and accessible for everyone.
+            Stay consistent, believe in yourself, and remember that every workout brings you one step closer to a stronger,  healthier,and  more confident you.
+        </p>
+        <button id="joinbtn">Start Your Journey</button>
+        </section>
+      
+
+    </div>
+</section>
+        <footer><p>© 2026 Fitness Guide with Sunny | All Rights Reserved
+            </p>
+            
+        </footer>
+        
+        <script src="script.js"></script>
+</body>
+</html>
